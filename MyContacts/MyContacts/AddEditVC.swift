@@ -18,6 +18,7 @@ class AddEditVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             lastNameTextField.text = object?.lastName;
             phoneNumberTextField.text = object?.phoneNumber;
             birthDatePicker.date = object?.birthday ?? Date();
+            contactImage.image = UIImage(data:object!.photo!)
         } else {
             self.title = "Add new contact"
         }
